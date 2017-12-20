@@ -82,7 +82,7 @@ Total points required: 50
 * An important concept in planning is the "MVP". This stands for Mininum Viable Product. Simply, what is the smallest, simplest, least-amount-of-features version of your product that you could make that would still be considered completed and passable. For example: I am making a simple chat app. What are some "MVP Features"? The ability to type in a message, the ability to send a message, and the ability to recieve a message. If I want to add any other features, I need to carefully think if they are part of my MVP. A cool animation whenever I send a message? A notification sound when I recieve a message? Those aren't absolutely necessary for my app to function, so I need to put them aside until I finish all my MVP features. When planning, make a list of all the features your app **needs** to function and work on only them until they are done.
 * Another important facet of planning is setting tasks for yourself. You can waste a lot of time trying to figure what exactly to do next. Switching constantly between thinking about what to do and actually doing can really slow you down. It's a good idea to take some time to split your project into tasks. The more the better! A good goal is to see if you can split your entire project into hour chunks. If you think you have made as many tasks as you can think of, break the tasks you have into smaller tasks. This will allow you to just focus on actually doing the tasks, speeding up your development times. Trello.com is a good site for task management.
 * It's worth noting: plans don't need to be set in stone! You'll find the need for some extra endpoint, or you'll need to change your schemas up, or you'll realize a given feature really isn't MVP status. That's completely fine, it's important to be agile. It's important to plan, but it's also important not to waste time trying to come up with every single eventuality.
-* To aid in planning, you might want to use the [project-plan.pdf](project-plan.pdf) document in this repo. It is optional, and you can use Trello instead or in addition.
+* To aid in planning, you might want to use the [project-plan.pdf](project-plan.pdf) document in this repo. It is optional, and you can use Twilio instead or in addition.
 
 #### Domain Registration
 
@@ -96,7 +96,11 @@ Gotchas:
 
 #### Responsive
 
-Responsive design means that your application looks good regardless of the size of the screen.  Whether the user is visiting your site from their laptop or phone it should keep an effective layout and proper functionality.  This is done using responsive CSS, media queries, inline styling, and various other strategies.  One main strategy is mobile-first design, meaning design your site for a phone sized screen first and build it out for larger screen sizes.
+Responsive design means that your application looks good regardless of the size of the screen.  Whether the user is visiting your site from their laptop or phone it should keep an effective layout and proper functionality.  This is done using responsive CSS, media queries, inline styling, and various other strategies.  One main strategy is mobile-first design, meaning design your site for a phone sized screen first and build it out for larger screen sizes.  
+
+To get the credit for responsive design you most have at least one complete view/page with more than one component completely responsive.
+   Would NOT count: A login page with a centered login box that shrinks based off screen size.
+   Would Count: A home page with responsive header and body that has multiple elements arranged one way for a laptop view, and is reorganized accordingly for a smaller screen size.
 
 Gotchas: Layout and design take alot of time.  Making your site look good in multiple layouts will take even more time. BUT if there's a chance a employer may visit your site on their mobile device, this could be valuable time spent!
 
@@ -156,6 +160,8 @@ Gotchas:
 
 In the world of data, visualization plays a key role in portraying the data.  Being able to effectively display that data is made a little easier with ChartJS.  ChartJS is a open source HTML library, [available as a React extension](https://github.com/jerairrest/react-chartjs-2) that makes displaying data in the form of a graph or chart fairly simple.  The documentation is pretty straightforward, and integration with React is very doable.
 
+To get the points for ChartJS you need to have at least 1 graphic that contains data relevant to your project and is not static.  Meaning, you can't hardcode one dataset into your chart and have it display that dataset no matter what.  It needs to change with updated data.
+
 Gotchas: ChartJS has certain limitations that other libraries, like D3, do not.  While it is easier to use, it has fewer options and customizations. You have x amount of graph/chart options you can use and while interactivity is being added, it is not as updated as D3.
 
 #### D3
@@ -163,6 +169,8 @@ Gotchas: ChartJS has certain limitations that other libraries, like D3, do not. 
 D3 is more of a libary for creating and manipulating HTML than it is a charting libary like ChartJS.  The possibilites with D3 are pretty endless. D3 can go way beyond graphs/charts and into other sort of graphics you may need.  Like this: https://bl.ocks.org/mbostock/1353700. The many many ways that you can visualize data with D3 make it pretty awesome.
 
 Gotchas: D3's main drawback is it's difficult to incorporate, there is a steep learning curve.
+
+To get the points for D3 you need to have at least 1 graphic that contains data relevant to your project and is not static.  Meaning, you can't hardcode one dataset into your chart and have it display that dataset no matter what.  It needs to change with updated data.
 
 The syntaxes are more complex than Chart.js because it involves creating each element of the chart. Sifting through the documentation can take awhile.  Also, some high-level stuff, D3 directly manipulates the DOM while react is built around manipulating the virtual DOM.  Get React and D3 to play nicely together takes some fiddling. [Here's a good article for this](https://medium.com/@tibotiber/react-d3-js-balancing-performance-developer-experience-4da35f912484). Don't let these gotchas scare you, D3 is a valuable libary to have knowledge of to impress potential employers.
 
@@ -185,7 +193,7 @@ Twilio has a wide range of servies that can be used. They vary from sending SMS 
 
 Gotchas:
 * Twilio does not require a traditional “API key”. To set up your Twilio SMS service you must request an account SID and a Twilio Authentication token. You must then apply for a phone number that will be handling all of the message sending.
-* There is a free account type (yay!) as well as paid accounts. With the free account, you are limited to sending messages to a single phone number that you choose during creation and only that number while using the free account. A free Twilio account can be great if you just want to be the sole receiver or the information. If you want to have your users receive messages, you’ll have to fork over some moneys per message sent. Consider a paid plan, so potential employers can try your site and type in their own phone number.
+* There is a free account type (yay!) as well as paid accounts. With the free account, you are limited to sending messages to a single phone number that you choose during creation and only that number while using the free account. A free Twilio account can be great if you just want to be the sole receiver or the information. If you want to have your users receive messages, you’ll have to fork over some moneys per message sent.
 
 #### CSS-in-JS
 
@@ -261,14 +269,6 @@ Don't:
 #### Uses Time Effectively
 
 Your presentation must be between within 60 seconds of your target to get 10 points. The default target is 2 minutes, thus you're shooting for 1-3 minutes. However, you may tell the timer your target is anywhere from 2-4 minutes.
-
-## Awards
-We'll be putting more specific defintions on these, but here are the award titles:
-* Best Overall
-* Most Technical
-* Best presentation
-* CSS/Design
-* Best solution for a business
 
 ## To add:
 * Goal is learning.
